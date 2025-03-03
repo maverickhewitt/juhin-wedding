@@ -344,7 +344,7 @@
 }
 
 .sakura {
-	background: #674ea7;
+	background: #f4d4d4;
 }
 
 
@@ -352,6 +352,7 @@
 
 body {
 	font-family: Arial, Helvetica, Sans-serif;
+	background-color: #5a1922;
 }
 
 img {
@@ -385,7 +386,7 @@ img {
 	font-style: normal;
 	font-size: 60px;
 	margin: 32px 0;
-	color: #674ea7;
+	color: #f4d4d4;
 }
 
 .title h2 {
@@ -404,7 +405,7 @@ img {
 	font-weight: bolder;
 	font-style: normal;
 	font-size: 32px;
-	color: #674ea7;
+	color: #f4d4d4;
 	margin: 16px;
 	text-align: center;
 }
@@ -414,12 +415,12 @@ img {
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	font-size: 24px;
-	color: #674ea7;
+	color: #f4d4d4;
 	margin-top: 5px;
 }
 
 .title p {
-	color: #564861;
+	color: #ff8091;
 	margin: 30px 0 20px;
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -474,7 +475,7 @@ body {
 .venue {
 	width: auto;
 	height: auto;
-	background-color: #674ea7;
+	background-color: #f4d4d4;
 	border-radius: 16px;
 	text-align: center;
 	color: #fff;
@@ -517,28 +518,28 @@ body {
 }
 
 .seconds {
-	background-color: #145689;
+	background-color: #f6a6a6;
 }
 
 .date {
-	color: #874562;
+	color: pink;
 	font-weight: 900;
 }
 
 .place {
-	color: #874562;
+	color: pink;
 	font-weight: 900;
 }
 
 .footer {
-	color: #564861;
+	color: #f4d4d4;
 	text-align: center;
 	font-size: 16px;
 	margin: 24px;
 }
 
 .phone {
-	color: #874562
+	color: #f4d4d4
 }
 
 .end-msg {
@@ -557,7 +558,7 @@ a {
 }
 
 .happiness {
-	color: #874562;
+	color: #f4d4d4;
 	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
@@ -565,7 +566,7 @@ a {
 }
 
 .twitter {
-	color: #874562;
+	color: #f4d4d4;
 }
 
 .music {
