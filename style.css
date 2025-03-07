@@ -541,6 +541,10 @@ body {
 	margin: 24px;
 }
 
+.footer span{
+	color: #ff8091;
+}
+
 .phone {
 	color: #f4d4d4
 }
