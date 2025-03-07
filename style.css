@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Raleway|Rouge+Script");
 @-webkit-keyframes fall {
 	0% {
 		opacity: 0.9;
@@ -362,7 +363,7 @@ img {
 
 @media (max-width:900px) {
 	img {
-		max-width: 30%;
+		max-width: 45%;
 	}
 }
 
@@ -381,7 +382,7 @@ img {
 }
 
 .title h1 {
-	font-family: 'Dancing Script', cursive;
+	font-family: 'Rouge Script', sans-serif; /*'Dancing Script', cursive;*/
 	font-weight: bold;
 	font-style: normal;
 	font-size: 60px;
@@ -411,10 +412,10 @@ img {
 }
 
 .title h3 {
-	font-weight: 300;
+	font-weight: 200;
 	text-transform: uppercase;
 	letter-spacing: 5px;
-	font-size: 24px;
+	font-size: 20px;
 	color: #f4d4d4;
 	margin-top: 5px;
 }
@@ -466,9 +467,9 @@ body {
 #time {
 	width: auto;
 	height: auto;
-	padding: 20px;
+	padding:0;
 	background-color: #ffffff;
-	border-radius: 20px;
+	border-radius:20px;
 	font-size: 16px;
 	/* testing here */
 }
@@ -479,14 +480,15 @@ body {
 	background-color: #f4d4d4;
 	border-radius: 16px;
 	text-align: center;
-	color: #fff;
+	color: #e25c67;
 	padding: 8px;
 	margin-right: 8px;
+	font-weight: bold;
 }
 
 .venue a {
 	text-decoration: none;
-	color: #fff;
+	color: #e25c67;
 }
 
 .container {
