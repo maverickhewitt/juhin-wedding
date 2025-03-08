@@ -3,12 +3,8 @@
     $('.sakura-falling').sakura();
 })(jQuery);
 
-// $(document).on('click', function(){
-//   document.getElementById("my_audio").play();
-// });
-
-$(document).ready(function() {
-  $("#my_audio").get(0).play();
+$(document).on('click', function(){
+  document.getElementById("my_audio").play();
 });
 
 var countDownDate = new Date("Apr 19, 2025 00:00:00").getTime();
