@@ -7,15 +7,33 @@ $(document).on('click', function(){
   document.getElementById("my_audio").play();
 });
 
+
+//Sliding up
 document.getElementById("revealButton").addEventListener("click", function() {
-  document.getElementById("overlay").style.display = "none";
-  
+  var overlay = document.getElementById("overlay");
   var audio = document.getElementById("my_audio");
   audio.muted = false; 
   audio.play(); 
 
-  document.getElementById("invitation").style.display = "block";
+  // Add a class to trigger the slide-up animation
+  overlay.classList.add("slide-up");
+
+  // Wait for the animation to finish before hiding the overlay
+  overlay.addEventListener("transitionend", function() {
+    overlay.style.display = "none"; // Hide the overlay after the animation
+    document.getElementById("invitation").style.display = "block"; // Show the invitation
+  }, { once: true }); // Ensure the event listener is only called once
 });
+
+//Normal disapear
+// document.getElementById("revealButton").addEventListener("click", function() {
+//   document.getElementById("overlay").style.display = "none";
+//   var audio = document.getElementById("my_audio");
+//   audio.muted = false; 
+//   audio.play(); 
+
+//   document.getElementById("invitation").style.display = "block";
+// });
 
 var countDownDate = new Date("Apr 19, 2025 00:00:00").getTime();
 // var countDownDate = new Date("Mar 12, 2025 00:00:00").getTime();
