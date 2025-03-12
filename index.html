@@ -13,6 +13,13 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
    <body>
+      <div id="overlay" class="overlay">
+         <div class="overlay-content">
+             <h2>Juhin and Saulin <br>would like to give you an invitation</h2>
+             <h3><i>(Juhin dan Saulin <br> ingin memberikan jemputan <br>kepada anda)</i></h3>
+             <button id="revealButton">Click Here <br><span class="tekanSini"><i>(Tekan Sini)</i></span></button>
+         </div>
+     </div>
       <div class="sakura-falling"></div>
       <img src="img/flower2.png" alt="image-top-right" class="top-right-decoration">
       <img src="img/flower4.png" alt="image-top-left" class="top-left-decoration"> 
@@ -20,10 +27,11 @@
       <div class="wrap">
          <div class="title">
             <br><br><br><br>
-            <h3>Together With Our Families<br>We Cordially Invite You<br>To The Marriage of</h3>
+            <!-- <h3 id="invitation-title">Together With Our Families<br>We Cordially Invite You<br>To The Marriage of</h3> -->
+            <h3 id="invitation-title">Wedding Invitation<br>To The Marriage of</h3>
             <h1>Juhin </h1>
             <h2>&</h2>
-            <h1>Wife</h1>
+            <h1>Saulin</h1>
             <p>
                on <span class="date">19 April 2025</span>
                <br>
@@ -32,22 +40,22 @@
                ----------------------------------
                <br>
                CHURCH CEREMONY:
-               <span class="place"><br>8:00AM - 12:00PM</span>
+               <span class="place"><br>10:00AM - 12:00PM</span>
                <br>
                ----------------------------------
                <br>
-               HALL CEREMONY:         
+               WEDDING RECEPTION:         
                <br>
-               <span class="place">12:00PM - 5:00PM</span>
+               <span class="place">12:30PM - 6:00PM</span>
             </p>
          </div>
       </div>
-      <div id="time"></div>
-      <br>
+      <div class="prewedding-section"></div>
+      <div id="time" class="countdown-container"></div>
+      <br><br>
       <p class="dance-med">
-         Location of The Wedding Ceremony
+         Location of Their Wedding
       </p>
-      <br>
       <div class="actions">
          
         <!-- <a href="googlemapslink" target="_blank">
@@ -61,27 +69,57 @@
        </a> -->
       </div>
       <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d881.5188283948905!2d116.7728920542235!3d6.506386801139957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x323a47c27f6539c1%3A0xa1c53536ae4e17a!2sKota%20Marudu%20Borneo%20Evangelical%20Church!5e1!3m2!1sen!2smy!4v1741350107569!5m2!1sen!2smy" width="100%" height="450" style="border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
          <a href="https://maps.app.goo.gl/Fs6Ui45na8rswYUC6" target="_blank">
-            <div class="venue">CHURCH CEREMONY</div>
-            <br>
+            <div class="venue">
+               <div class="venue-icon">
+                  <i class="fa fa-map-marker"></i>
+              </div>
+              <span>Church Ceremony:</span> <br> Kota Marudu Borneo Evangelical Church,
+               Gereja SIB Kota Marudu
+               <div class="map-container">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d881.5188283948905!2d116.7728920542235!3d6.506386801139957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x323a47c27f6539c1%3A0xa1c53536ae4e17a!2sKota%20Marudu%20Borneo%20Evangelical%20Church!5e1!3m2!1sen!2smy!4v1741350107569!5m2!1sen!2smy" 
+                      width="100%" 
+                      height="450" 
+                      style="border-radius: 20px;" 
+                      allowfullscreen="" 
+                      loading="lazy" 
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
           </a>
-         <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d909.7328036613079!2d116.77345626953692!3d6.507466332057334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMzAnMjYuOSJOIDExNsKwNDYnMjYuOCJF!5e1!3m2!1sen!2smy!4v1741353374254!5m2!1sen!2smy" width="100%" height="450" style="border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-         <br>
-         <a href="https://maps.app.goo.gl/Vj8DHRkushK3EmTj7" target="_blank">
-            <div class="venue">HALL CEREMONY</div>
-            <br>
+          <br><br>
+         <a href="https://maps.app.goo.gl/UfWw8c4GXzu2Hrvt6" target="_blank">
+            <div class="venue">
+               <div class="venue-icon">
+                  <i class="fa fa-map-marker"></i>
+              </div>
+               <span>Wedding Reception:</span> <br> AB Grand Hall, Jalan Radu, Kota Marudu
+               <div class="map-container">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d292.63021330933!2d116.77398427858917!3d6.507646815818567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMzAnMjcuNSJOIDExNsKwNDYnMjYuOSJF!5e1!3m2!1sen!2smy!4v1741754955469!5m2!1sen!2smy" 
+                      width="100%" 
+                      height="450" 
+                      style="border-radius: 20px;" 
+                      allowfullscreen="" 
+                      loading="lazy" 
+                      referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
           </a>
        </div>
-
+       <br><br>
       <p class="footer">
-         <i>"So they are no longer two, but one flesh.Therefore what God has joined together, let no one separate."<br>~ Matthew 19:6 ~</i>
-         <span></span>
+         <i>"So they are no longer two, but <span>one flesh</span>.Therefore what God has joined together, let <span>no one separate.</span>"<br><br><i class="verse">~ Matthew 19:6 ~</i></i>
       </p>
       <div class="music">
         <audio src="song.mp3" id="my_audio" loop="loop"></audio> 
       </div>
-      <p class="happiness">Contact:<br><a href="wasap link" target="_blank" class="twitter"><i class="fa fa-whatsapp"> Juhin</i></a> <a href="wasap link" target="_blank" class="twitter"><i class="fa fa-whatsapp"> Juhin</i></a></p>
+      <br><br>
+      <p class="happiness">CONTACT:
+         <br>
+         <a href="https://wa.link/px54xk" target="_blank" class="twitter"><i class="fa fa-whatsapp"> Juhin</i></a> 
+         <a href="https://wa.link/c0nkq0" target="_blank" class="twitter"><i class="fa fa-whatsapp"> Saulin</i></a>
+      </p>
+      <br>
 
       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
       <script src='https://cdn.jsdelivr.net/gh/timoschaefer/jQuery-Sakura/jquery-sakura.min.js'></script>
