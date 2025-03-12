@@ -7,7 +7,18 @@ $(document).on('click', function(){
   document.getElementById("my_audio").play();
 });
 
+document.getElementById("revealButton").addEventListener("click", function() {
+  document.getElementById("overlay").style.display = "none";
+  
+  var audio = document.getElementById("my_audio");
+  audio.muted = false; 
+  audio.play(); 
+
+  document.getElementById("invitation").style.display = "block";
+});
+
 var countDownDate = new Date("Apr 19, 2025 00:00:00").getTime();
+// var countDownDate = new Date("Mar 12, 2025 00:00:00").getTime();
 
 var x = setInterval(function() {
 
@@ -20,11 +31,25 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
-  document.getElementById("time").innerHTML = "<div class='container'><div class='days block'>"+ days + "<br>Days</div>" + "<div class='hours block'>" + hours + "<br>Hours</div>" + "<div class='minutes block'>" + minutes + "<br>Minutes</div>" + "<div class='seconds block'>" + seconds + "<br>Seconds</div></div>";
+  // document.getElementById("time").innerHTML = "<div class='container'><div class='days block'>"+ days + "<br>Days</div>" + "<div class='hours block'>" + hours + "<br>Hours</div>" + "<div class='minutes block'>" + minutes + "<br>Minutes</div>" + "<div class='seconds block'>" + seconds + "<br>Seconds</div></div>";
+
+  // document.getElementById("time").innerHTML = 
+  //   "<div class='countdown-container'>" +
+  //       "<span class='countdown-item days'>" + days + " days</span>" +
+  //       "<span class='countdown-item hours'>" + hours + " hours</span>" +
+  //       "<span class='countdown-item minutes'>" + minutes + " minutes</span>" +
+  //       "<span class='countdown-item seconds'>" + seconds + " seconds</span>" +
+  //   "</div>";
+
+  document.getElementById("time").innerHTML = 
+    days + " <span class=highlight-time> days</span> " + 
+    hours + " <span class=highlight-time> hr</span> " + 
+    minutes + " <span class=highlight-time> min</span> " + 
+    seconds + " <span class=highlight-time> sec</span>";
   
   if (distance < 0) {
       clearInterval(x);
-      document.getElementById("time").innerHTML = "Bless the married couple for happy life!";
+      document.getElementById("time").innerHTML = "It is the Day of Wedding!";
   }
 }, 1000);
 
@@ -64,6 +89,7 @@ console.log('\n\n%c SAVE THE DATE: 19th April, 2025!', styles);
 console.log('%cYour presence is requested!%c\n\nRegards: Juhin', styles1, styles2);
 
 console.log(
-  `%cand Wife!\n\n`,
+  `%cand Saulin!\n\n`,
   'color: yellow; background:tomato; font-size: 24pt; font-weight: bold',
 )
+
