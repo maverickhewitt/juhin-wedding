@@ -700,6 +700,10 @@ a {
 	letter-spacing: 2px;
 }
 
+.happiness a{
+	font-family: 'Rouge Script', sans-serif;
+}
+
 .twitter {
 	font-family: 'Rouge Script', sans-serif;
 	font-size: 20px;
